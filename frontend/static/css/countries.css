@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+nav .nav__link {
+  font-weight: 800;
+  color: hsl(209deg, 23%, 22%);
+}
+nav button {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(209deg, 23%, 22%);
+}
+nav button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+#container {
+  padding-left: 3rem;
+  display: grid;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cards {
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+}
+
+.cards-info a hover {
+  transform: scale(1.5);
+}
+
+.cards-flag img {
+  border-radius: 6px;
+}
+
+.cards-text {
+  padding: 1rem;
+  font-size: 1rem;
+}/*# sourceMappingURL=countries.css.map */
