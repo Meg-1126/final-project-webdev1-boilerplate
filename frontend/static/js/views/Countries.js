@@ -43,6 +43,7 @@ export default class extends AbstractView {
                     </div>
                     `
                 container.appendChild(card);
+
         }
 
         return `

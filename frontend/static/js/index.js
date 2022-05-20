@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
   switchScreenMode();
 
+
   document.getElementById("region").addEventListener('click', (event) => {
     inputRegion = document.getElementById("region").value;
     filteredCountry = filterCountry();
@@ -27,6 +28,27 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 
   
+
+  // Search bar
+  function countrySearchByName () {
+    let inputCountry = document.getElementById("countrySearch"); 
+    let countryName;
+    let txtValue;
+    let cardDiv = document.getElementsByClassName("cards");
+
+    inputCountry.addEventListener("keyup", function() {
+      let input = inputCountry.value.toUpperCase();
+
+     for (let i = 0; i < countries.length; i++) {
+       countryName = document.getElementsByClassName("country-name")[i]; 
+       txtValue = countryName.textContent || countryName.innerText;
+       txtValue.toUpperCase().startsWith(input) 
+       ? (cardDiv[i].parentNode.style.display = "")
+       : (cardDiv[i].parentNode.style.display = "none");
+      }
+    });
+  }
+ countrySearchByName();
 
  
   function filterCountry() {
