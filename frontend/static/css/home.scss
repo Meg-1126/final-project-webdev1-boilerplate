@@ -85,7 +85,7 @@ nav {
     padding: 1rem;
 
     .nav__link {
-      display: none;
+      font-size: 1rem;
      }
      button {
        padding: .5rem;
@@ -93,7 +93,7 @@ nav {
      }
   }
   #app {
-    padding-top: 5rem;
+    padding-top: 10rem;
     #home-container {
       .home-heading {
         color: $color-d-blue-dMode;

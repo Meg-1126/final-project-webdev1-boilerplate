@@ -43,9 +43,9 @@ nav button:hover {
   background-color: rgb(255, 255, 255);
   width: 250px;
 }
-
-.cards-info a hover {
-  transform: scale(1.5);
+.cards:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .cards-flag img {
@@ -55,4 +55,17 @@ nav button:hover {
 .cards-text {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+  #container {
+    display: block;
+    margin: 0 auto;
+  }
+  #container .search {
+    margin-bottom: 3rem;
+  }
+  #container .cards {
+    margin-top: 3rem;
+  }
 }/*# sourceMappingURL=countries.css.map */
