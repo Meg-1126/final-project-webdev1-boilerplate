@@ -1,7 +1,5 @@
 import AbstractView from "./AbstractView.js";
-import { countries, filteredCountry } from "../index.js";
-
-let filter = filteredCountry;
+import { countries } from "../index.js";
 
 export default class extends AbstractView {
     constructor(params) {
@@ -27,49 +25,29 @@ export default class extends AbstractView {
         </div>  
         `
 
-        for (let i = 0; i < filter.length; i++) {
-            const card = document.createElement("div");
-            card.innerHTML = `
-                <div class="cards-info">
-                    <a href="/countries/`+ filter[i].cca3 + `">
-                    <div class="cards-flag">
-                        <img src="`+ filter[i].flags.png + `" width="250" height="150">
+        for (let i = 0; i < countries.length; i++) {
+                const card = document.createElement("div");
+                card.innerHTML = `
+                        <div class="cards-info">
+                            <a href="/countries/`+ countries[i].cca3 + `">
+                                <div class="cards-flag">
+                                    <img src="`+ countries[i].flags.png + `" width="250" height="150">
+                                </div>
+                                <div class="cards-text">
+                                    <h3>`+ countries[i].name.common + `</h3>
+                                    <p>Population: `+ countries[i].population + `</p> 
+                                    <p>Region: `+ countries[i].region + `</p>
+                                    <p>Capital: `+ countries[i].capital + `</p>
+                                </div>
+                         </a>
                     </div>
-                    <div class="cards-text">
-                        <h3>`+ filter[i].name.common + `</h3>
-                        <p>Population: `+ filter[i].population + `</p> 
-                        <p>Region: `+ filter[i].region + `</p>
-                        <p>Capital: `+ filter[i].capital + `</p>
-                    </div>
-                    </a>
-                </div>
-                `
-            container.appendChild(card);
+                    `
+                container.appendChild(card);
         }
 
-        // for (let i = 0; i < countries.length; i++) {
-        //         const card = document.createElement("div");
-        //         card.innerHTML = `
-        //                 <div class="cards-info">
-        //                     <a href="/countries/`+ countries[i].cca3 + `">
-        //                         <div class="cards-flag">
-        //                             <img src="`+ countries[i].flags.png + `" width="250" height="150">
-        //                         </div>
-        //                         <div class="cards-text">
-        //                             <h3>`+ countries[i].name.common + `</h3>
-        //                             <p>Population: `+ countries[i].population + `</p> 
-        //                             <p>Region: `+ countries[i].region + `</p>
-        //                             <p>Capital: `+ countries[i].capital + `</p>
-        //                         </div>
-        //                  </a>
-        //             </div>
-        //             `
-        //         container.appendChild(card);
-        // }
-
         return `
+        ${div.innerHTML}
             <div id="container">
-                ${div.innerHTML}
                 ${container.innerHTML}
                 </div>
             </div>
