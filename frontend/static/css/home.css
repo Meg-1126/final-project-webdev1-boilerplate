@@ -75,7 +75,7 @@ nav button:hover {
     padding: 1rem;
   }
   nav .nav__link {
-    display: none;
+    font-size: 1rem;
   }
   nav button {
     padding: 0.5rem;
@@ -83,7 +83,7 @@ nav button:hover {
   }
 
   #app {
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
   #app #home-container .home-heading {
     color: hsl(209deg, 23%, 22%);
