@@ -32,8 +32,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
        countryName = document.getElementsByClassName("country-name")[i]; 
        txtValue = countryName.textContent || countryName.innerText;
        txtValue.toUpperCase().startsWith(input) 
-       ? (cardDiv[i].style.display = "")
-       : (cardDiv[i].style.display = "none");
+       ? (cardDiv[i].parentNode.style.display = "")
+       : (cardDiv[i].parentNode.style.display = "none");
       }
     });
   }
