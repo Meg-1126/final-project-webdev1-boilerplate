@@ -76,6 +76,15 @@ nav {
 }
 
 @media only screen and (max-width: 375px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    #region {
+      margin-top: 1rem;
+      width: 50%;
+    }
+  }
   #container {
     display: block;
     .search {
