@@ -47,14 +47,12 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.cards {
+
+.cards-info {
   box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
   width: 250px;
-}
-
-.cards-info {
     a {
       hover {
         transform: scale(1.5);
