@@ -16,3 +16,11 @@ function switchScreenMode() {
 
 }
 switchScreenMode();
+    
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
+  let inputRegion = document.getElementById("region");
+  console.log('input region' + inputRegion);
+  
+});
