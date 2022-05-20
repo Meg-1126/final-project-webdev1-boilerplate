@@ -22,11 +22,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById("region").addEventListener('click', (event) => {
     inputRegion = document.getElementById("region").value;
-    filteredCountry = filterCountry();
+    filteredCountry = filterCountry(inputRegion);
   });
 
  
-  function filterCountry() {
+  function filterCountry(inputRegion) {
     filteredCountry = [];
     for (let i = 0; i < countries.length; i++) {
       if (inputRegion !== null && inputRegion === countries[i].region) {
@@ -35,7 +35,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         filteredCountry.push(countries[i]);
       }
     }
-
     return filteredCountry;
   }
 
