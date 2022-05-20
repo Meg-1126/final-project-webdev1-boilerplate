@@ -17,6 +17,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
   
   }
   switchScreenMode();
-  
+
+  // Search bar
+  function countrySearchByName () {
+    let inputCountry = document.getElementById("countrySearch"); 
+    let countryName;
+    let txtValue;
+    let cardDiv = document.getElementsByClassName("cards");
+
+    inputCountry.addEventListener("keyup", function() {
+      let input = inputCountry.value.toUpperCase();
+
+     for (let i = 0; i < countries.length; i++) {
+       countryName = document.getElementsByClassName("country-name")[i]; 
+       txtValue = countryName.textContent || countryName.innerText;
+       txtValue.toUpperCase().startsWith(input) 
+       ? (cardDiv[i].style.display = "")
+       : (cardDiv[i].style.display = "none");
+      }
+    });
+  }
+ countrySearchByName();
 
 });
