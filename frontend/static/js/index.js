@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Search bar
   function countrySearchByName () {
-    let cardDiv = document.getElementsByClassName("cards");
+    let cardDiv = document.getElementsByClassName("cards-info");
     let countryName;
     let inputCountry = document.getElementById("countrySearch"); 
     let txtValue;

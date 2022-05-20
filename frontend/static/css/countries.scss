@@ -39,6 +39,12 @@ nav {
 
 //Countries page
 //Research bar
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
 #container {
   padding-left: 3rem;
   display: grid;
