@@ -37,7 +37,7 @@ export default class extends AbstractView{
                             <img src="`+countries[i].flags.png+`" width="250" height="150">
                         </div>
                         <div class="cards-text">
-                            <h3>`+countries[i].name.common+`</h3>
+                            <h3 class="country-name">`+countries[i].name.common+`</h3>
                             <p>Population: `+countries[i].population+`</p> 
                             <p>Region: `+countries[i].region+`</p>
                             <p>Capital: `+countries[i].capital+`</p>
