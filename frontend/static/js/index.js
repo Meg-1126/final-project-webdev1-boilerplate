@@ -20,10 +20,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Search bar
   function countrySearchByName () {
-    let inputCountry = document.getElementById("countrySearch"); 
-    let countryName;
-    let txtValue;
     let cardDiv = document.getElementsByClassName("cards");
+    let countryName;
+    let inputCountry = document.getElementById("countrySearch"); 
+    let txtValue;
 
     inputCountry.addEventListener("keyup", function() {
       let input = inputCountry.value.toUpperCase();

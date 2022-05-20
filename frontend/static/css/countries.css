@@ -35,6 +35,7 @@ nav button:hover {
        column-gap: 10px;
   row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
 }
 
 .cards {
@@ -42,6 +43,7 @@ nav button:hover {
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
   width: 250px;
+  height: 280px;
 }
 .cards:hover {
   transform: scale(1.1);
@@ -60,7 +62,6 @@ nav button:hover {
 @media only screen and (max-width: 375px) {
   #container {
     display: block;
-    margin: 0 auto;
   }
   #container .search {
     margin-bottom: 3rem;
