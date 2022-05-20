@@ -54,7 +54,6 @@ nav {
   margin: 0 auto;
 }
 
-
 .cards-info {
   box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
   border-radius: 6px;
@@ -79,15 +78,10 @@ nav {
 @media only screen and (max-width: 375px) {
   #container {
     display: block;
-    // margin: 0 auto;
-    // padding-left: 3rem;
-    // column-gap: 10px;
-    // row-gap: 30px;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
     .search {
       margin-bottom: 3rem;
     }
-    .cards {
+    .cards-info {
       margin-top: 3rem;
     }
   }
