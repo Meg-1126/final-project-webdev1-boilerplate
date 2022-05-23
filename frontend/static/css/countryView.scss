@@ -1,13 +1,59 @@
+// Variables
+$color-d-blue-dMode: hsl(209, 23%, 22%);
+$color-v-d-blue-dMode: hsl(207, 26%, 17%);
+$color-v-d-blue-lMode:hsl(200, 15%, 8%);
+$color-d-gray-lMode: hsl(0, 0%, 52%);
+$color-v-l-gray-lMode: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+
 .country-page {
     margin: 2rem;
     display: flex;
     flex-direction: column;  
     row-gap: 2rem; 
-    
+    button {
+        border: none;
+        border-radius: 20px;
+        padding: 1rem;
+        color: $color-white;
+        background-color: $color-d-blue-dMode;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+          transform: scale(0.9);
+          transition: .5s;
+        }
+    }
 }
 
 .country-info {
     display: flex;
     gap: 5rem;
-    font-size: 2rem;
+    width: 100%;
+    .country-flag  {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .country-data {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .country-info {
+    display: block;
+    row-gap: 2rem; 
+     .country-flag  {
+        width: 100%;
+        margin-bottom: 1rem;
+     }
+     .country-data {
+        font-size: 1rem;
+        width: 100%;
+     }
+    }
+
 }

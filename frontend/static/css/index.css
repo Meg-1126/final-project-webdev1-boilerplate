@@ -48,3 +48,8 @@ a {
   color: hsl(207, 26%, 17%) !important;
 }
 
+.dark .country-page button{
+  background-color: white;
+  color: hsl(207, 26%, 17%);
+}
+
