@@ -18,10 +18,10 @@ export default class extends AbstractView{
                 container.innerHTML = `
                     <div class="country-info">
                         <div class="country-flag">
-                            <img src="`+ countries[i].flags.png + `" width="550" height="450">
+                            <img src="`+ countries[i].flags.png + `">
                         </div>
                         <div class="country-data">
-                            <h3>`+ countries[i].name.common + `</h3>
+                            <h3>`+ countries[i].name.common + `</h3><br>
                             <p>Native Name: `+ countries[i].nativeName + `</p>                            
                             <p>Population: `+ countries[i].population + `</p> 
                             <p>Region: `+ countries[i].region + `</p>
