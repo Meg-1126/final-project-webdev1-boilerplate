@@ -4,6 +4,7 @@ export const countries = getCountries();
 let filteredCountry = [];
 
 let inputRegion;
+const numConvert = new Intl.NumberFormat("en-US");
 
 //Add all the addEventListener inside this 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -77,7 +78,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 </div>
                 <div class="cards-text">
                     <h3>`+ countries[i].name.common + `</h3>
-                    <p>Population: `+ countries[i].population + `</p> 
+                    <p>Population: `+ numConvert.format(countries[i].population) + `</p> 
                     <p>Region: `+ countries[i].region + `</p>
                     <p>Capital: `+ countries[i].capital + `</p>
                 </div>
