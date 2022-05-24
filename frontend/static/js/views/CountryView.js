@@ -8,7 +8,7 @@ export default class extends AbstractView{
     }
 
     async getHTML() {
-        console.log(this.params.id);
+        const numConvert = new Intl.NumberFormat("en-US");
         let country = this.params.id;
         
         const container = document.createElement("div");
@@ -22,8 +22,8 @@ export default class extends AbstractView{
                         </div>
                         <div class="country-data">
                             <h3>`+ countries[i].name.common + `</h3><br>
-                            <p>Native Name: `+ countries[i].nativeName + `</p>                            
-                            <p>Population: `+ countries[i].population + `</p> 
+                            <p>Native Name: `+ countries[i].name.nativeName + `</p>                            
+                            <p>Population: `+ numConvert.format(countries[i].population) + `</p> 
                             <p>Region: `+ countries[i].region + `</p>
                             <p>Sub Region: `+ countries[i].subregion+ `</p>
                             <p>Capital: `+ countries[i].capital + `</p>
