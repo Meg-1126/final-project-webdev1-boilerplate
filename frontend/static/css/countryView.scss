@@ -25,32 +25,53 @@ $color-white: hsl(0, 0%, 100%);
         }
     }
 }
-
-.country-info {
+.country-content {
     display: flex;
-    gap: 5rem;
-    width: 100%;
+    flex-direction: row;
+    gap: 5rem; 
+    padding-left: 50px;
+
+    .country-info-left {
+    display: flex;
+    }
+    .country-info-right {
+        display: flex;
+        flex-direction: row;
+    }
+    .country-data-right {
+        display: flex;
+        flex-direction: column;
+        padding-top: 55px;
+        padding-left: 30px;
+        font-size: 1.0rem;
+        line-height: 1.5;
+    }
     .country-flag  {
-        width: 50%;
         img {
-            width: 100%;
+            width: 500px;
+            height: 370px;
         }
     }
-    .country-data {
+    .country-data-left {
         width: 50%;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
+        line-height: 1.5;
+    }
+    .border-countries {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media only screen and (max-width: 375px) {
-    .country-info {
+    .country-info-left {
     display: block;
     row-gap: 2rem; 
      .country-flag  {
         width: 100%;
         margin-bottom: 1rem;
      }
-     .country-data {
+     .country-data-left {
         font-size: 1rem;
         width: 100%;
      }
